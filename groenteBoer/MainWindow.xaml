@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:groenteBoer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1080" Width="1920">
     <Grid>
-        
+
+        <Button x:Name="btnCatGroente" Content="groente" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Height="119" Width="338"/>
+        <Button x:Name="btnCatFruit" Content="fruit" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Height="119" Width="338"/>
+        <Button x:Name="btnCatOverig" Content="overig" HorizontalAlignment="Left" Margin="694,10,0,0" VerticalAlignment="Top" Height="119" Width="338"/>
+
+        <ScrollViewer x:Name="sv" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" Width="1050" Margin="0,134,0,0">
+            <WrapPanel x:Name="wp" Orientation="Horizontal">
+
+            </WrapPanel>
+        </ScrollViewer>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="1096,0,10,360" FontSize="36"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="1096,850,0,0" VerticalAlignment="Top" Height="204" Width="814"/>
+        <TextBox x:Name="totaalPrijs" HorizontalAlignment="Left" Margin="1096,754,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="814" FontSize="36"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="1262,725,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
     </Grid>
 </Window>
